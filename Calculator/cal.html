@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Acalculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div id="calculator">
+        <input type="text" id="display" readonly><br>
+        <div class="btn-cont">
+            <button class="btn" onclick="curd='';document.querySelector('#display').value=curd;">C</button>
+            <button class="btn" onclick="curd+=1;document.querySelector('#display').value=curd;">1</button>
+            <button class="btn" onclick="curd+=2;document.querySelector('#display').value=curd;">2</button>
+            <button class="btn" onclick="curd+='+';document.querySelector('#display').value=curd;">+</button>
+            <button class="btn" onclick="curd+=3;document.querySelector('#display').value=curd;">3</button>
+            <button class="btn" onclick="curd+=4;document.querySelector('#display').value=curd;">4</button>
+            <button class="btn" onclick="curd+='-';document.querySelector('#display').value=curd;">-</button>
+            <button class="btn" onclick="curd+=5;document.querySelector('#display').value=curd;">5</button>
+            <button class="btn" onclick="curd+=6;document.querySelector('#display').value=curd;">6</button>
+            <button class="btn" onclick="curd+='*';document.querySelector('#display').value=curd;">*</button>
+            <button class="btn" onclick="curd+=7;document.querySelector('#display').value=curd;">7</button>
+            <button class="btn" onclick="curd+=8;document.querySelector('#display').value=curd;">8</button>
+            <button class="btn" onclick="curd+='/';document.querySelector('#display').value=curd;">/</button>
+            <button class="btn" onclick="curd+=9;document.querySelector('#display').value=curd;">9</button>
+            <button class="btn" onclick="curd+=0;document.querySelector('#display').value=curd;">0</button>
+            <button class="btn" onclick="curd = eval(curd);document.querySelector('#display').value=curd;">=</button>
+            <button class="btn" onclick="curd+='.';document.querySelector('#display').value=curd;">.</button>
+        </div>
+    </div>
+    <script>
+        let curd='';
+        document.querySelector('#display').value=curd;
+    </script>
+</body>
+</html>
